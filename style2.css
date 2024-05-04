@@ -1,0 +1,60 @@
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);}
+
+.noti p{
+font-size: 2rem;
+}
+.notification-box{
+    display:flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.notification-box div {
+    /* border: 1px solid black; */
+    margin: 12px 0px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.notification-box div .noti-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height:100%;
+}
+
+.notification-box div .noti-container .notification-body{
+    color: blue;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.noti-container .profile-picture {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin: 0px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius:1rem;
+}
+
+.noti-container .profile-picture:hover {
+   scale: 130%;
+    border: 0.5rem rgb(20, 241, 20) solid;
+    border-radius:1rem;
+    transition: 300ms all ease;
+}
+.noti-container .profile-picture img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: top;
+}
